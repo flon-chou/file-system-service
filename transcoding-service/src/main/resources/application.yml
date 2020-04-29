@@ -1,0 +1,42 @@
+server:
+  port: 6666
+
+spring:
+  application:
+    name: transcoding-service
+  ############################################################
+  ####### Rabbitmq 配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: flon
+    password: Flon9374.
+    publisher-confirms: true
+    virtual-host: /
+    listener:
+      simple:
+        # 为了保证信息能够被正确消费,建议签收模式设置为手工签收,并在代码中实现手工签收
+        acknowledge-mode: manual
+        # 侦听器调用者线程的最小数量
+        concurrency: 10
+        # 侦听器调用者线程的最大数量
+        max-concurrency: 20
+        # 最多一次消费多少条数据 -限流
+        prefetch: 1
+#####################################################################################################
+# 打印日志
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    #    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    #    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.springms: DEBUG
+#####################################################################################################
+
+#####################################################################################################
+# 转码文件路径
+ffmpeg:
+  source-dir-path: C:\Users\flonc\Desktop\temp
+  ### 注意最后要加斜杠
+  target-dir-path: C:\Users\flonc\Desktop\temp\mp3\

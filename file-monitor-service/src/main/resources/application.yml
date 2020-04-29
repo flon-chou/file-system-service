@@ -1,0 +1,33 @@
+server:
+  port: 1000
+
+spring:
+  application:
+    name: file-monitor
+
+############################################################
+####### Rabbitmq 配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: flon
+    password: Flon9374.
+    publisher-confirms: true
+    virtual-host: /
+    template:
+      exchange: file-handle
+      routing-key: index.created
+    connection-timeout: 15000s
+    # 开启发送失败退回
+    publisher-returns: true
+
+############################################################
+#######  监控的文件目录路径
+monitor:
+  ## 监听目录路径
+  dir-path: C:\Users\flonc\Desktop\temp
+#  dir-path: ftp://test01:123@qw@39.104.51.212/ftp/tset01
+  ## 监听的文件后缀名
+  file-suffix: .index
+  ## 轮询间隔（单位：s）
+  interval: 5

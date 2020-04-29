@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cj.qc.fastmybatismapper.TaskScopeMapper">
+    <resultMap id="TaskScopeCombDTOMap" type="com.cj.qc.model.dto.TaskScopeCombDTO">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="record_start_time" jdbcType="TIMESTAMP" property="recordStartTime" />
+        <result column="record_end_time" jdbcType="TIMESTAMP" property="recordEndTime" />
+        <result column="org_relation" jdbcType="VARCHAR" property="orgRelation" />
+        <result column="org_relation_name" jdbcType="VARCHAR" property="orgRelationName" />
+        <result column="type_of_service" jdbcType="VARCHAR" property="typeOfService" />
+        <result column="type_of_service_name" jdbcType="VARCHAR" property="typeOfServiceName" />
+        <result column="policy_no" jdbcType="VARCHAR" property="policyNo" />
+        <result column="call_type" jdbcType="VARCHAR" property="callType" />
+        <result column="call_type_name" jdbcType="VARCHAR" property="callTypeName" />
+
+        <result column="call_duration_min" jdbcType="INTEGER" property="callDurationMin" />
+        <result column="call_duration_max" jdbcType="INTEGER" property="callDurationMax" />
+
+        <result column="call_numbers" jdbcType="VARCHAR" property="callNumbers" />
+        <result column="tsr_groups" jdbcType="VARCHAR" property="tsrGroups" />
+        <result column="tsr_no" jdbcType="VARCHAR" property="tsrNo" />
+        <result column="audio_names" jdbcType="VARCHAR" property="audioNames" />
+        <result column="data_type" jdbcType="VARCHAR" property="dataType" />
+        <result column="data_type_name" jdbcType="VARCHAR" property="dataTypeName" />
+        <result column="key_words" jdbcType="VARCHAR" property="keyWords" />
+    </resultMap>
+
+    <select id="getTaskScopeCombByTaskScopeId" parameterType="java.lang.Long" resultMap="TaskScopeCombDTOMap">
+        SELECT
+            s.id,
+            s.record_start_time,
+            s.record_end_time,
+            s.org_relation,
+            d4.dict_data_name AS org_relation_name,
+            s.type_of_service,
+            d1.dict_data_name AS type_of_service_name,
+            s.policy_no,
+            s.call_type,
+            d2.dict_data_name AS call_type_name,
+            s.call_duration_min,
+            s.call_duration_max,
+            s.call_numbers,
+            s.tsr_groups,
+            s.tsr_no,
+            s.audio_names,
+            s.data_type,
+            d3.dict_data_name AS data_type_name,
+            s.key_words
+        FROM
+            cj_qc_task_scope s
+                LEFT JOIN cj_sys_dictionary_data d1 ON d1.dict_code = 'SERVICE_TYPE'
+                AND d1.dict_data_code = s.type_of_service
+                LEFT JOIN cj_sys_dictionary_data d2 ON d2.dict_code = 'CALL_TYPE'
+                AND d2.dict_data_code = s.call_type
+                LEFT JOIN cj_sys_dictionary_data d3 ON d3.dict_code = 'DATA_TYPE'
+                AND d3.dict_data_code = s.data_type
+                LEFT JOIN cj_sys_dictionary_data d4 ON d4.dict_code = 'ORG_RELATION'
+                AND d4.dict_data_code = s.org_relation
+        WHERE
+            s.id = #{taskScopeId}
+    </select>
+</mapper>

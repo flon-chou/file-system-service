@@ -1,0 +1,71 @@
+server:
+  port: 8003
+  servlet:
+    context-path: /index
+
+spring:
+  application:
+    name: index-service
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    # 数据库访问配置
+    # 主数据源，默认的
+    url: jdbc:mysql://192.168.1.159:3306/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: Chiju123!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 数据连接池配置
+    tomcat:
+      max-active: 150
+      max-idle: 20
+      min-idle: 5
+      max-wait: 60000
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000 #空闲连接回收的时间间隔，与test-while-idle一起使用，设置5分钟
+      min-evictable-idle-time-millis: 300000 #连接池空闲连接的有效时间 ，设置30分钟
+      validation-query: SELECT 1 FROM DUAL
+  jackson:
+    #    date-format: yyyy-MM-dd #如果使用字符串表示，用这行设置格式
+    #    timezone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true #使用时间戳，使用数值timestamp表示日期
+
+  ############################################################
+  ####### Rabbitmq 配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: flon
+    password: Flon9374.
+    publisher-confirms: true
+    virtual-host: /
+    listener:
+      simple:
+        # 为了保证信息能够被正确消费,建议签收模式设置为手工签收,并在代码中实现手工签收
+        acknowledge-mode: manual
+        # 侦听器调用者线程的最小数量
+        concurrency: 10
+        # 侦听器调用者线程的最大数量
+        max-concurrency: 20
+        # 最多一次消费多少条数据 -限流
+        prefetch: 1
+
+#####################################################################################################
+# 打印日志
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    #    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    #    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.springms: DEBUG
+#####################################################################################################
+
+#####################################################################################################
+#####  待处理的索引文件地址
+index-file-path: C:\Users\flonc\Desktop\temp\20190325.index

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cj.qc.fastmybatismapper.ModelMapper">
+
+    <resultMap id="RuleCombDTOMap" type="com.cj.qc.model.dto.RuleCombDTO">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="rule_type_id" jdbcType="BIGINT" property="ruleTypeId" />
+        <result column="rule_name" jdbcType="VARCHAR" property="ruleName" />
+        <result column="rule_logic" jdbcType="VARCHAR" property="ruleLogic" />
+        <result column="status" jdbcType="TINYINT" property="status" />
+        <result column="stop_time" jdbcType="TIMESTAMP" property="stopTime" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+        <result column="model_id" jdbcType="BIGINT" property="modelId" />
+        <result column="role" jdbcType="VARCHAR" property="role" />
+        <result column="number" jdbcType="INTEGER" property="number" />
+        <result column="range" jdbcType="INTEGER" property="range" />
+        <result column="score" jdbcType="INTEGER" property="score" />
+    </resultMap>
+
+    <select id="getRuleCombByModelId" parameterType="java.lang.Long" resultMap="RuleCombDTOMap">
+        SELECT
+            r.id,
+            r.rule_type_id,
+            r.rule_name,
+            r.rule_logic,
+            r.`status`,
+            r.stop_time,
+            r.remark,
+            mr.model_id,
+            mr.role,
+            mr.number,
+            mr.`range`,
+            mr.score
+        FROM
+            cj_qc_model_rule mr
+                INNER JOIN cj_qc_rule r ON mr.rule_id = r.id
+        WHERE
+            mr.model_id = #{modelId}
+        ORDER BY
+            mr.id
+    </select>
+
+</mapper>

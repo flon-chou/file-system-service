@@ -1,0 +1,22 @@
+
+dependencies {
+
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile project(":common-utils")
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // ######### mysql及数据连接池依赖
+    compile 'mysql:mysql-connector-java'
+    compile group: 'com.alibaba', name: 'druid', version: '1.1.12'
+
+    compile 'com.alibaba:fastjson:1.2.7'
+    // ###################      ffmpeg jave 依赖
+    implementation 'ws.schild:jave-core:2.4.6'
+    implementation 'ws.schild:jave-native-win64:2.4.6'
+    implementation 'ws.schild:jave-native-linux64:2.4.6'
+    implementation 'ws.schild:jave-native-osx64:2.4.6'
+    // ###################   FTP 依赖
+    compile('commons-net:commons-net:3.4')
+    compile('commons-io:commons-io:2.6')
+    // ###################  SSH2 依赖
+    compile group: 'ch.ethz.ganymed', name: 'ganymed-ssh2', version: '262'
+}

@@ -1,0 +1,103 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /asr
+
+spring:
+  application:
+    name: asr-task
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    # 数据库访问配置
+    # 主数据源，默认的
+    url: jdbc:mysql://192.168.1.159:3306/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: Chiju123!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 数据连接池配置
+    tomcat:
+      max-active: 150
+      max-idle: 20
+      min-idle: 5
+      max-wait: 60000
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000 #空闲连接回收的时间间隔，与test-while-idle一起使用，设置5分钟
+      min-evictable-idle-time-millis: 300000 #连接池空闲连接的有效时间 ，设置30分钟
+      validation-query: SELECT 1 FROM DUAL
+  jackson:
+    #    date-format: yyyy-MM-dd #如果使用字符串表示，用这行设置格式
+    #    timezone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true #使用时间戳，使用数值timestamp表示日期
+
+  ############################################################
+  ####### Rabbitmq 配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: flon
+    password: Flon9374.
+    publisher-confirms: true
+    virtual-host: /
+    listener:
+      simple:
+        # 为了保证信息能够被正确消费,建议签收模式设置为手工签收,并在代码中实现手工签收
+        acknowledge-mode: manual
+        # 侦听器调用者线程的最小数量
+        concurrency: 10
+        # 侦听器调用者线程的最大数量
+        max-concurrency: 20
+        # 最多一次消费多少条数据 -限流
+        prefetch: 1
+
+
+#####################################################################################################
+# 打印日志
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    #    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    #    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.springms: DEBUG
+#####################################################################################################
+
+#####################################################################################################
+# 转码文件路径
+ffmpeg:
+  source-dir-path: C:\Users\flonc\Desktop\temp
+  ### 注意最后要加斜杠
+  target-dir-path: C:\Users\flonc\Desktop\temp\wav\
+
+#########################################################################################################################################
+# 语音引擎配置（中科院）
+speech-engine:
+  service:
+    ip: 172.24.12.233
+    username: root
+    password: 123@qw
+    encoding: GBK
+  ### 注意路径后面跟斜杠
+  running-dir: /System_Offine_Shell/bin/
+  running-script: run.sh
+#  running-result-dir: ${speech-engine.running-dir}resource
+  running-result-dir: E:\炽聚-2019-文档集\双录系统\实施阶段文档\语音引擎识别结果
+  ### 注意路径后面跟斜杠
+  remote-audio-dir: /ftp/voice_test/
+  op-cmd: sh ${speech-engine.running-dir}${speech-engine.running-script} -b ${speech-engine.running-dir} -v ${speech-engine.remote-audio-dir}
+#########################################################################################################################################
+
+#########################################################################################################################################
+##  解析器配置
+resolver:
+  file-encoder: UTF-8
+  file-ext: txt
+  audio-ext:  wav
+  audio-delimiter:  /
+  delimiter: \s+
+
+#########################################################################################################################################

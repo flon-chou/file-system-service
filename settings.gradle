@@ -1,0 +1,10 @@
+rootProject.name = 'System-Service'
+include(
+        'asr-task',
+        'file-monitor-service',
+        'indexing-service',
+        'transcoding-service',
+        'common-utils',
+        'qc-service'
+)
+

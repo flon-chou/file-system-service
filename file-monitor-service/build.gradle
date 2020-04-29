@@ -1,0 +1,25 @@
+//plugins {
+//    id 'org.springframework.boot' version '2.1.4.RELEASE'
+//    id 'java'
+//}
+//
+//apply plugin: 'io.spring.dependency-management'
+//
+//group = 'com.cj'
+//version = '0.0.1-SNAPSHOT'
+//sourceCompatibility = '1.8'
+//
+//configurations {
+//    compileOnly {
+//        extendsFrom annotationProcessor
+//    }
+//}
+//
+//repositories {
+//    mavenCentral()
+//}
+
+dependencies {
+    compile project(':common-utils')
+    compile('commons-io:commons-io:2.6')
+}

@@ -1,0 +1,43 @@
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    //待定
+//	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+//	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+//	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    //mybatis
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.0'
+    //mybatis分页工具
+    compile group: 'com.github.pagehelper', name: 'pagehelper-spring-boot-starter', version: '1.2.10'
+    //mybatis扩展：fastmybatis
+    compile group: 'net.oschina.durcframework', name: 'fastmybatis-spring-boot-starter', version: '1.6.0'
+
+    //mysql依赖
+    compile('mysql:mysql-connector-java')
+    compile group: 'com.alibaba', name: 'druid', version: '1.1.14'
+    runtimeOnly('mysql:mysql-connector-java')
+
+    //lombok
+    compile('org.projectlombok:lombok:1.18.6')
+//	compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    //工具类
+    //swagger依赖
+    compile('io.springfox:springfox-swagger-ui:2.9.2')
+    //相对于swagger-ui更友好的界面UI
+//	compile group: 'com.github.xiaoymin', name: 'swagger-bootstrap-ui', version: '1.9.0'
+    compile('io.springfox:springfox-swagger2:2.9.2')
+    compile group: 'io.swagger.core.v3', name: 'swagger-annotations', version: '2.0.7'
+    compile group: 'io.swagger.core.v3', name: 'swagger-models', version: '2.0.7'
+    //hutool依赖
+    compile group: 'cn.hutool', name: 'hutool-all', version: '4.5.1'
+    //json-lib依赖
+    compile group: 'net.sf.json-lib', name: 'json-lib', version: '2.4',classifier:'jdk15'
+
+}

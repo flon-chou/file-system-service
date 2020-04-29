@@ -1,0 +1,93 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /drec
+
+spring:
+  application:
+    name: qc-service
+#  jackson.default-property-inclusion: non_empty     #为空的属性在转换时忽略掉
+#  servlet:
+#    multipart:
+#      max-file-size: 1000MB
+#      max-request-size: 100MB
+
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://192.168.1.159:3306/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    #外网地址
+#    url: jdbc:mysql://chiju.oicp.net:3309/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: Chiju123!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  # 数据连接池配置
+    tomcat:
+      max-active: 150
+      max-idle: 20
+      min-idle: 5
+      max-wait: 60000
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000 #空闲连接回收的时间间隔，与test-while-idle一起使用，设置5分钟
+      min-evictable-idle-time-millis: 300000 #连接池空闲连接的有效时间 ，设置30分钟
+      validation-query: SELECT 1 FROM DUAL
+  jackson:
+    #    date-format: yyyy-MM-dd #如果使用字符串表示，用这行设置格式
+    #    timezone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true #使用时间戳，使用数值timestamp表示日期
+  ####### Rabbitmq 配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    publisher-returns: true
+    virtual-host: /
+    listener:
+      simple:
+        # 为了保证信息能够被正确消费,建议签收模式设置为手工签收,并在代码中实现手工签收
+        acknowledge-mode: manual
+        # 侦听器调用者线程的最小数量
+        concurrency: 10
+        # 侦听器调用者线程的最大数量
+        max-concurrency: 20
+        # 最多一次消费多少条数据 -限流
+        prefetch: 1
+#####################################################################################################
+
+##############  Mybatis配置 start #############
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.chiju.doublerecord.model   # 注意：对应实体类的路径
+  configuration:
+    map-underscore-to-camel-case: true
+    # 打印sql, 方便调试
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    use-generated-keys: true
+    default-statement-timeout: 60
+    default-fetch-size: 100
+
+##############  Mybatis配置  end #############
+
+##############  Mybatis-pagehelper配置 start #############
+pagehelper:
+  helperDialect: mysql
+  #默认的配置pagehelper.reasonable=true，这样导致的结果就是你查询的页数大于当前的也如的话，总会返回最后一页，如果想返回empty，设置false
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+##############  Mybatis-pagehelper配置 start #############
+
+##############  日志配置 start #############
+# 打印日志
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    #    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    #    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.springms: DEBUG
+##############  日志配置 start #############
+

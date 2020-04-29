@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cj.qc.fastmybatismapper.VoiceIndexingMapper">
+
+    <select id="queryByCondition"  resultType="java.lang.String">
+        SELECT
+        r.file_name
+        FROM
+        cj_voice_indexing r
+        <if test="longSilent != null">
+            INNER JOIN (
+            SELECT
+            REVERSE(
+            SUBSTR(
+            REVERSE(b.audio_name)
+            FROM
+            INSTR(REVERSE(b.audio_name), '.') + 1
+            )
+            ) AS file_name,
+            SUM(IFNULL(b.blank_len, 0)) AS blank_len
+            FROM
+            cj_voice_blankinfo b
+            GROUP BY
+            b.audio_name
+            ) blank ON blank.file_name = r.file_name
+            AND blank.blank_len > #{longSilent}
+        </if>
+        <if test="abnormalSpeed != null">
+            INNER JOIN (
+            SELECT
+            REVERSE(
+            SUBSTR(
+            REVERSE(p.audio_name)
+            FROM
+            INSTR(REVERSE(p.audio_name), '.') + 1
+            )
+            ) AS file_name
+            FROM
+            cj_voice_text_role_speed_average p
+            where
+            p.speed_mix > #{abnormalSpeed}
+            ) speed ON speed.file_name = r.file_name
+        </if>
+        <if test="seatEmtion != null">
+            INNER JOIN (
+            SELECT
+            REVERSE(
+            SUBSTR(
+            REVERSE(m.audio_name)
+            FROM
+            INSTR(REVERSE(m.audio_name), '.') + 1
+            )
+            ) AS file_name
+            FROM
+            cj_voice_emotion_result_top m
+            where
+            m.result = #{seatEmtion}
+            ) emotion ON emotion.file_name = r.file_name
+        </if>
+        WHERE 1=1
+        <if test="recordStartTime != null">
+            AND r.start_time &gt;= #{recordStartTime}
+        </if>
+        <if test="recordEndTime != null">
+            AND r.end_time &lt;= #{recordEndTime}
+        </if>
+        <if test="typeOfServiceName != null">
+            AND r.type_of_service =#{typeOfServiceName}
+        </if>
+        <if test="policyNos.size()>0">
+            AND r.policy_no IN
+            <foreach item="policyNo" index="index" collection="policyNos" open="(" separator="," close=")">
+                #{policyNo}
+            </foreach>
+        </if>
+        <if test="callTypeName != null">
+            AND r.call_type = #{callTypeName}
+        </if>
+        <if test="callDurationMin != null">
+            AND r.duration &gt;= #{callDurationMin}
+        </if>
+        <if test="callDurationMax != null">
+            AND r.duration &lt;= #{callDurationMax}
+        </if>
+        <if test="callNumbers.size()>0">
+            AND r.call_number IN
+            <foreach item="callNumber" index="index" collection="callNumbers" open="(" separator="," close=")">
+                #{callNumber}
+            </foreach>
+        </if>
+        <if test="tsrGroups.size()>0">
+            AND r.tsr_group IN
+            <foreach item="tsrGroup" index="index" collection="tsrGroups" open="(" separator="," close=")">
+                #{tsrGroup}
+            </foreach>
+        </if>
+        <if test="tsrNos.size()>0">
+            AND r.tsr_no IN
+            <foreach item="tsrNo" index="index" collection="tsrNos" open="(" separator="," close=")">
+                #{tsrNo}
+            </foreach>
+        </if>
+        <if test="audioNames.size()>0">
+            AND r.file_name IN
+            <foreach item="audioName" index="index" collection="audioNames" open="(" separator="," close=")">
+                #{audioName}
+            </foreach>
+        </if>
+    </select>
+
+</mapper>

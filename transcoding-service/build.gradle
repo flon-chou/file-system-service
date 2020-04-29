@@ -1,0 +1,7 @@
+
+
+dependencies {
+    compile project(":common-utils")
+    compileOnly 'com.alibaba:fastjson:1.2.29'
+}
+
