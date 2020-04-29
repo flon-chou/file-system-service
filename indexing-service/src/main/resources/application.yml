@@ -14,9 +14,9 @@ spring:
   datasource:
     # 数据库访问配置
     # 主数据源，默认的
-    url: jdbc:mysql://192.168.1.159:3306/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    url: jdbc:mysql://localhost:3306/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
     username: root
-    password: Chiju123!
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     # 数据连接池配置
@@ -41,7 +41,7 @@ spring:
     host: localhost
     port: 5672
     username: flon
-    password: Flon9374.
+    password: 123456
     publisher-confirms: true
     virtual-host: /
     listener:
