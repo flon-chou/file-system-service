@@ -11,7 +11,7 @@ spring:
     host: localhost
     port: 5672
     username: flon
-    password: Flon9374.
+    password: 123456
     publisher-confirms: true
     virtual-host: /
     template:
@@ -26,7 +26,6 @@ spring:
 monitor:
   ## 监听目录路径
   dir-path: C:\Users\flonc\Desktop\temp
-#  dir-path: ftp://test01:123@qw@39.104.51.212/ftp/tset01
   ## 监听的文件后缀名
   file-suffix: .index
   ## 轮询间隔（单位：s）
