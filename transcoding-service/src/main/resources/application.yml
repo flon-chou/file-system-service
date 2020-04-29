@@ -10,7 +10,7 @@ spring:
     host: localhost
     port: 5672
     username: flon
-    password: Flon9374.
+    password: 123456
     publisher-confirms: true
     virtual-host: /
     listener:
