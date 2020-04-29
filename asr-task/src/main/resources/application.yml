@@ -13,9 +13,9 @@ spring:
   datasource:
     # 数据库访问配置
     # 主数据源，默认的
-    url: jdbc:mysql://192.168.1.159:3306/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    url: jdbc:mysql://localhost:3306/qa_v_1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
     username: root
-    password: Chiju123!
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     # 数据连接池配置
@@ -40,7 +40,7 @@ spring:
     host: localhost
     port: 5672
     username: flon
-    password: Flon9374.
+    password: 123456
     publisher-confirms: true
     virtual-host: /
     listener:
@@ -77,15 +77,15 @@ ffmpeg:
 # 语音引擎配置（中科院）
 speech-engine:
   service:
-    ip: 172.24.12.233
+    ip: localhost
     username: root
-    password: 123@qw
+    password: 123456
     encoding: GBK
   ### 注意路径后面跟斜杠
   running-dir: /System_Offine_Shell/bin/
   running-script: run.sh
 #  running-result-dir: ${speech-engine.running-dir}resource
-  running-result-dir: E:\炽聚-2019-文档集\双录系统\实施阶段文档\语音引擎识别结果
+  running-result-dir: E:\文档集\双录系统\实施阶段文档\语音引擎识别结果
   ### 注意路径后面跟斜杠
   remote-audio-dir: /ftp/voice_test/
   op-cmd: sh ${speech-engine.running-dir}${speech-engine.running-script} -b ${speech-engine.running-dir} -v ${speech-engine.remote-audio-dir}
