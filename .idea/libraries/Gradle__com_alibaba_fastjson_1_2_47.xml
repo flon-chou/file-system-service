@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba:fastjson:1.2.47">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

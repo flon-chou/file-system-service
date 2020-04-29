@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.cj" externalSystemModuleVersion="0.0.1-SNAPSHOT" linkedProjectId=":transcoding-service" linkedProjectPath="$MODULE_DIR$/../../../transcoding-service" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../transcoding-service">
+      <excludeFolder url="file://$MODULE_DIR$/../../../transcoding-service/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../transcoding-service/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../transcoding-service/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2041e699-afa0-4eb7-9ad6-2185ebe6e97a" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/asr-task/.gradle/" />
+    <ignored path="$PROJECT_DIR$/asr-task/build/" />
+    <ignored path="$PROJECT_DIR$/asr-task/out/" />
+    <ignored path="$PROJECT_DIR$/common-utils/.gradle/" />
+    <ignored path="$PROJECT_DIR$/common-utils/build/" />
+    <ignored path="$PROJECT_DIR$/common-utils/out/" />
+    <ignored path="$PROJECT_DIR$/file-monitor-service/.gradle/" />
+    <ignored path="$PROJECT_DIR$/file-monitor-service/build/" />
+    <ignored path="$PROJECT_DIR$/file-monitor-service/out/" />
+    <ignored path="$PROJECT_DIR$/indexing-service/.gradle/" />
+    <ignored path="$PROJECT_DIR$/indexing-service/build/" />
+    <ignored path="$PROJECT_DIR$/indexing-service/out/" />
+    <ignored path="$PROJECT_DIR$/qc-service/.gradle/" />
+    <ignored path="$PROJECT_DIR$/qc-service/build/" />
+    <ignored path="$PROJECT_DIR$/qc-service/out/" />
+    <ignored path="$PROJECT_DIR$/transcoding-service/.gradle/" />
+    <ignored path="$PROJECT_DIR$/transcoding-service/build/" />
+    <ignored path="$PROJECT_DIR$/transcoding-service/out/" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="System-Service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/indexing-service/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1330">
+              <caret line="70" selection-start-line="70" selection-end-line="70" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/indexing-service/src/main/java/com/cj/indexing/handle/MessageReceive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file-monitor-service/src/main/java/com/cj/monitor/listener/FileListenerRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file-monitor-service/src/main/java/com/cj/monitor/listener/FileFilterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file-monitor-service/src/main/java/com/cj/monitor/listener/FileListenerAdaptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file-monitor-service/src/main/java/com/cj/monitor/listener/FileListenerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/indexing-service/src/main/java/com/cj/indexing/service/VoiceIndexingService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="System-Service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="common-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="common-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="common-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="common-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="common-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="common-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cj" type="462c0819:PsiDirectoryNode" />
+              <item name="ffmpeg" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AsrTaskApplication">
+    <configuration name="AsrTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="asr-task_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cj.asr.AsrTaskApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileMonitorServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="file-monitor-service_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cj.monitor.FileMonitorServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndexingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="indexing-service_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cj.indexing.IndexingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QCServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="qc-service_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cj.qc.QCServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TranscodingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="transcoding-service_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cj.transcoding.TranscodingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AsrTaskApplication" />
+      <item itemvalue="Spring Boot.FileMonitorServiceApplication" />
+      <item itemvalue="Spring Boot.IndexingServiceApplication" />
+      <item itemvalue="Spring Boot.QCServiceApplication" />
+      <item itemvalue="Spring Boot.TranscodingServiceApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="150000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Alibaba Cloud Explorer" order="0" weight="0.32995737" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49712092" visible="true" weight="0.20735608" />
+      <window_info id="Structure" order="2" sideWeight="0.5028791" side_tool="true" weight="0.17430703" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" sideWeight="0.5016611" side_tool="true" weight="0.1988273" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tail" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="0" weight="0.32962137" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3303671" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946696" weight="0.3585746" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.24659091" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4989339" weight="0.3259177" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32954547" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.45682302" side_tool="true" visible="true" weight="0.3575419" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.54317695" visible="true" weight="0.3575419" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.52132195" weight="0.39420936" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32954547" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.62633264" weight="0.38530067" />
+      <window_info anchor="bottom" id="Debug" order="15" sideWeight="0.54371" weight="0.30846325" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.32850778" />
+      <window_info anchor="bottom" x="22" y="406" width="1876" height="380" id="Statistic" order="17" weight="0.3125" />
+      <window_info anchor="bottom" id="Run Dashboard" order="18" sideWeight="0.4978678" weight="0.30066815" />
+      <window_info anchor="right" id="Maven" weight="0.32995737" />
+      <window_info anchor="right" id="Key Promoter X" />
+      <window_info anchor="right" id="Word Book" side_tool="true" />
+      <window_info anchor="right" id="Alibaba Function Compute" />
+      <window_info anchor="right" id="Alibaba Log Console" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" x="815" y="188" width="876" height="648" id="Gradle" order="5" type="FLOATING" weight="0.46695095" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.1663113" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Alibaba Cloud Explorer" order="0" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49712092" visible="true" weight="0.20255864" />
+      <window_info id="Structure" order="2" sideWeight="0.5028791" side_tool="true" weight="0.17430703" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" sideWeight="0.5016611" side_tool="true" weight="0.1988273" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="0" weight="0.32962137" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3303671" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946696" weight="0.36636972" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.24659091" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4989339" weight="0.3259177" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32954547" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" weight="0.32925472" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.54371" weight="0.35817575" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.52132195" weight="0.39420936" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32954547" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.62633264" weight="0.38530067" />
+      <window_info anchor="bottom" id="Debug" order="15" sideWeight="0.54371" weight="0.6258352" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.32850778" />
+      <window_info anchor="bottom" x="22" y="406" width="1876" height="380" id="Statistic" order="17" weight="0.3125" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="18" sideWeight="0.49840087" visible="true" weight="0.41091314" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" x="815" y="188" width="876" height="648" id="Gradle" order="5" type="FLOATING" weight="0.46695095" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.1663113" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/2566800dc841d9d2c5a0d34d807e45d4107dbbdf/commons-io-2.6-sources.jar!/org/apache/commons/io/filefilter/HiddenFileFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file-monitor-service/src/main/java/com/cj/monitor/listener/FileListenerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.cj" externalSystemModuleVersion="0.0.1-SNAPSHOT" linkedProjectId=":asr-task" linkedProjectPath="$MODULE_DIR$/../../../asr-task" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../asr-task">
+      <excludeFolder url="file://$MODULE_DIR$/../../../asr-task/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../asr-task/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../asr-task/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

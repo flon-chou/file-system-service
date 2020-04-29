@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/System-Service.iml" filepath="$PROJECT_DIR$/.idea/System-Service.iml" group="System-Service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/asr-task/asr-task.iml" filepath="$PROJECT_DIR$/.idea/modules/asr-task/asr-task.iml" group="System-Service/asr-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/asr-task/asr-task_main.iml" filepath="$PROJECT_DIR$/.idea/modules/asr-task/asr-task_main.iml" group="System-Service/asr-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/asr-task/asr-task_test.iml" filepath="$PROJECT_DIR$/.idea/modules/asr-task/asr-task_test.iml" group="System-Service/asr-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-utils/common-utils.iml" filepath="$PROJECT_DIR$/.idea/modules/common-utils/common-utils.iml" group="System-Service/common-utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-utils/common-utils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-utils/common-utils_main.iml" group="System-Service/common-utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-utils/common-utils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/common-utils/common-utils_test.iml" group="System-Service/common-utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/file-monitor-service/file-monitor-service.iml" filepath="$PROJECT_DIR$/.idea/modules/file-monitor-service/file-monitor-service.iml" group="System-Service/file-monitor-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/file-monitor-service/file-monitor-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/file-monitor-service/file-monitor-service_main.iml" group="System-Service/file-monitor-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/file-monitor-service/file-monitor-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/file-monitor-service/file-monitor-service_test.iml" group="System-Service/file-monitor-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/indexing-service/indexing-service.iml" filepath="$PROJECT_DIR$/.idea/modules/indexing-service/indexing-service.iml" group="System-Service/indexing-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/indexing-service/indexing-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/indexing-service/indexing-service_main.iml" group="System-Service/indexing-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/indexing-service/indexing-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/indexing-service/indexing-service_test.iml" group="System-Service/indexing-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qc-service/qc-service.iml" filepath="$PROJECT_DIR$/.idea/modules/qc-service/qc-service.iml" group="System-Service/qc-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qc-service/qc-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/qc-service/qc-service_main.iml" group="System-Service/qc-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qc-service/qc-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/qc-service/qc-service_test.iml" group="System-Service/qc-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/transcoding-service/transcoding-service.iml" filepath="$PROJECT_DIR$/.idea/modules/transcoding-service/transcoding-service.iml" group="System-Service/transcoding-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/transcoding-service/transcoding-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/transcoding-service/transcoding-service_main.iml" group="System-Service/transcoding-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/transcoding-service/transcoding-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/transcoding-service/transcoding-service_test.iml" group="System-Service/transcoding-service" />
+    </modules>
+  </component>
+</project>

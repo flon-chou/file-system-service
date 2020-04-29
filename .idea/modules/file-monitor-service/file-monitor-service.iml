@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.cj" externalSystemModuleVersion="0.0.1-SNAPSHOT" linkedProjectId=":file-monitor-service" linkedProjectPath="$MODULE_DIR$/../../../file-monitor-service" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../file-monitor-service">
+      <excludeFolder url="file://$MODULE_DIR$/../../../file-monitor-service/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../file-monitor-service/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../file-monitor-service/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

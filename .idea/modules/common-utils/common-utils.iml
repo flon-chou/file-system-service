@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.cj" externalSystemModuleVersion="0.0.1-SNAPSHOT" linkedProjectId=":common-utils" linkedProjectPath="$MODULE_DIR$/../../../common-utils" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../common-utils">
+      <excludeFolder url="file://$MODULE_DIR$/../../../common-utils/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../common-utils/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../common-utils/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
