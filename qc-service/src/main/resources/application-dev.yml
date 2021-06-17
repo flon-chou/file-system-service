@@ -38,8 +38,8 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username: guest
-    password: guest
+    username: xxx
+    password: xxx
     publisher-confirms: true
     publisher-returns: true
     virtual-host: /
