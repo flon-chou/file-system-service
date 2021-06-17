@@ -37,6 +37,6 @@ logging:
 #####################################################################################################
 # 转码文件路径
 ffmpeg:
-  source-dir-path: C:\Users\flonc\Desktop\temp
+  source-dir-path: \temp
   ### 注意最后要加斜杠
-  target-dir-path: C:\Users\flonc\Desktop\temp\mp3\
+  target-dir-path: \temp\mp3\
